@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+pre {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background: transparent !important;
+}
+pre code {
+  background: transparent;
+}
+
+pre [data-line] {
+  counter-increment: line;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+pre [data-line]::before {
+  content: counter(line);
+  position: absolute;
+  left: 0;
+  opacity: 0.4;
+}
+
 @font-face {
   font-family: "PPEditorial";
   src: url("/fonts/PPEditorialNew-Italic.otf") format("opentype");
@@ -12,18 +34,11 @@
   /* border: 1px solid red; */
   box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "PPEditorial", sans-serif;
-}
 
 @layer base {
   h1 {
     @apply text-4xl;
+    @apply font-semibold;
   }
   h2 {
     @apply text-3xl;
@@ -46,7 +61,24 @@ h6 {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+b {
+  font-weight: 400;
+  color: rgb(250 250 250);
+}
+
+a {
+  color: rgb(250 250 250);
+}
+
+code {
+  color: rgb(212 212 216);
+  background-color: #303030;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
 }
 
 @layer base {
@@ -112,4 +144,112 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes rotate-glow {
+  0% {
+    box-shadow: 0 0 0 0px rgba(55, 65, 81, 0.16),
+      0 0 0 12px rgba(55, 65, 81, 0.12), 0 0 0 24px rgba(55, 65, 81, 0.08);
+  }
+  6.25% {
+    box-shadow: 7px -3px 18px 0px rgba(55, 65, 81, 0.16),
+      12px -5px 28px 12px rgba(55, 65, 81, 0.12),
+      18px -8px 40px 24px rgba(55, 65, 81, 0.08);
+  }
+  12.5% {
+    box-shadow: 10px -10px 21px 0px rgba(55, 65, 81, 0.16),
+      16px -16px 33px 12px rgba(55, 65, 81, 0.12),
+      24px -24px 45px 24px rgba(55, 65, 81, 0.08);
+  }
+  18.75% {
+    box-shadow: 12px -8px 18px 0px rgba(55, 65, 81, 0.16),
+      19px -12px 30px 12px rgba(55, 65, 81, 0.12),
+      28px -18px 42px 24px rgba(55, 65, 81, 0.08);
+  }
+  25% {
+    box-shadow: 12px 0 21px 0px rgba(55, 65, 81, 0.16),
+      19px 0 33px 12px rgba(55, 65, 81, 0.12),
+      28px 0 45px 24px rgba(55, 65, 81, 0.08);
+  }
+  31.25% {
+    box-shadow: 10px 5px 18px 0px rgba(55, 65, 81, 0.16),
+      16px 8px 30px 12px rgba(55, 65, 81, 0.12),
+      24px 12px 42px 24px rgba(55, 65, 81, 0.08);
+  }
+  37.5% {
+    box-shadow: 7px 7px 18px 0px rgba(55, 65, 81, 0.16),
+      12px 12px 28px 12px rgba(55, 65, 81, 0.12),
+      18px 18px 40px 24px rgba(55, 65, 81, 0.08);
+  }
+  43.75% {
+    box-shadow: 5px 10px 15px 0px rgba(55, 65, 81, 0.16),
+      8px 16px 24px 12px rgba(55, 65, 81, 0.12),
+      12px 24px 36px 24px rgba(55, 65, 81, 0.08);
+  }
+  50% {
+    box-shadow: 0 10px 15px 0px rgba(55, 65, 81, 0.16),
+      0 16px 27px 12px rgba(55, 65, 81, 0.12),
+      0 24px 39px 24px rgba(55, 65, 81, 0.08);
+  }
+  56.25% {
+    box-shadow: -5px 7px 12px 0px rgba(55, 65, 81, 0.16),
+      -8px 12px 21px 12px rgba(55, 65, 81, 0.12),
+      -12px 18px 33px 24px rgba(55, 65, 81, 0.08);
+  }
+  62.5% {
+    box-shadow: -7px 7px 12px 0px rgba(55, 65, 81, 0.16),
+      -12px 12px 21px 12px rgba(55, 65, 81, 0.12),
+      -18px 18px 33px 24px rgba(55, 65, 81, 0.08);
+  }
+  68.75% {
+    box-shadow: -7px 3px 12px 0px rgba(55, 65, 81, 0.16),
+      -12px 5px 18px 12px rgba(55, 65, 81, 0.12),
+      -18px 8px 27px 24px rgba(55, 65, 81, 0.08);
+  }
+  75% {
+    box-shadow: -7px 0 12px 0px rgba(55, 65, 81, 0.16),
+      -12px 0 21px 12px rgba(55, 65, 81, 0.12),
+      -18px 0 30px 24px rgba(55, 65, 81, 0.08);
+  }
+  81.25% {
+    box-shadow: -5px -3px 9px 0px rgba(55, 65, 81, 0.16),
+      -8px -5px 15px 12px rgba(55, 65, 81, 0.12),
+      -12px -8px 24px 24px rgba(55, 65, 81, 0.08);
+  }
+  87.5% {
+    box-shadow: -5px -5px 9px 0px rgba(55, 65, 81, 0.16),
+      -8px -8px 15px 12px rgba(55, 65, 81, 0.12),
+      -12px -12px 24px 24px rgba(55, 65, 81, 0.08);
+  }
+  93.75% {
+    box-shadow: -3px -3px 6px 0px rgba(55, 65, 81, 0.16),
+      -5px -5px 9px 12px rgba(55, 65, 81, 0.12),
+      -8px -8px 15px 24px rgba(55, 65, 81, 0.08);
+  }
+  95% {
+    box-shadow: 0 0 0 0px rgba(55, 65, 81, 0.16),
+      0 0 0 12px rgba(55, 65, 81, 0.12), 0 0 0 24px rgba(55, 65, 81, 0.06);
+  }
+  100% {
+    box-shadow: 0;
+  }
+}
+
+.rotating-glow {
+  animation: rotate-glow 2s cubic-bezier(0.59, 0.27, 0.59, 0.6) forwards;
+}
+
+.hero-image-shadow {
+  position: relative;
+}
+
+.hero-image-shadow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
 }

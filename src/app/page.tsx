@@ -21,7 +21,7 @@ const itemVariants = {
 
 export default function Home() {
   return (
-    <>
+    <div className="p-10 flex flex-col gap-10">
       <Navbar />
       <motion.div
         className="max-w-screen-xl w-full grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-10"
@@ -42,7 +42,7 @@ export default function Home() {
         ))}
       </motion.div>
       <Footer />
-    </>
+    </div>
   );
 }
 

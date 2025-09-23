@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import LiquidGlass from "@/components/ui/liquid-glass";
 
 interface ProjectProps {
   image: string;
@@ -12,26 +12,26 @@ interface ProjectProps {
 
 const Project = ({ image, url, title, description, type }: ProjectProps) => {
   return (
-    <Link href={url} className="w-full flex flex-col gap-2 group">
-      <AspectRatio ratio={16 / 9} className="w-full overflow-hidden relative">
+    <Link href={url} className="w-full group">
+      <div className="relative w-full" style={{ aspectRatio: `${16 / 9}` }}>
         <Image
           src={image}
           alt={description}
           fill
-          className="object-cover object-center transition-opacity duration-500 group-hover:delay-500 group-hover:opacity-0"
+          className="object-cover object-center rounded-3xl"
+          priority={false}
         />
-        <Image
-          src="/videos/projects/test.gif"
-          alt={description}
-          fill
-          className="object-cover object-center absolute inset-0 transition-opacity duration-500 group-hover:delay-500 opacity-0 group-hover:opacity-100"
-        />
-      </AspectRatio>
-      <div className="flex flex-col gap-0">
-        <div className="flex items-center">
-          <p className="text-lg">{title} — <span className="text-zinc-400 text-sm">{type}</span></p>
-        </div>
-        <p className="text-sm text-zinc-400">{description}</p>
+        <div className="absolute inset-0 rounded-3xl bg-black/60" />
+        <LiquidGlass className="rounded-3xl">
+          <div className="flex flex-col h-full justify-end gap-1">
+            <div className="flex items-center">
+              <p className="text-lg">
+                {title} — <span className="text-zinc-400 text-sm">{type}</span>
+              </p>
+            </div>
+            <p className="text-sm text-zinc-400">{description}</p>
+          </div>
+        </LiquidGlass>
       </div>
     </Link>
   );
