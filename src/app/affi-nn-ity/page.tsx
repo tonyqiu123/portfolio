@@ -19,7 +19,7 @@ function greet(u: User) {
 `;
 
 export default function Home() {
-  const [source, setSource] = useState<any>(null);
+  const [source, setSource] = useState<Awaited<ReturnType<typeof serialize>> | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -226,7 +226,7 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <h3>Code Implementation</h3>
             <p className="text-zinc-400 mb-4">
-              Here's a sample of the StreamProcessor class that handles
+              Here&apos;s a sample of the StreamProcessor class that handles
               real-time message streaming with tool integration:
             </p>
           </div>
