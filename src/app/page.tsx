@@ -57,7 +57,7 @@ const projects = [
     description:
       "Building an AI-powered spreadsheet application with intelligent automation and natural language processing",
     type: "Project",
-    date: "2024.12",
+    date: "2025.08",
   },
   {
     image: "/images/projects/wat2do.png",
@@ -66,7 +66,7 @@ const projects = [
     description:
       "Building a comprehensive platform for students to discover and join club events across campus",
     type: "Project",
-    date: "2024.11",
+    date: "2025.07",
   },
   {
     image: "/images/projects/stackadapt.png",
@@ -75,7 +75,7 @@ const projects = [
     description:
       "Building programmatic advertising solutions with machine learning optimization",
     type: "Internship",
-    date: "2024.10",
+    date: "2025.05",
   },
   {
     image: "/images/projects/humane-society.png",
@@ -84,7 +84,7 @@ const projects = [
     description:
       "Building a tablet-first web app for a non-profit animal shelter to vet and connect volunteers to animals",
     type: "Design team",
-    date: "2024.09",
+    date: "2025.01",
   },
   {
     image: "/images/projects/affi-nn-ity.png",
@@ -93,7 +93,7 @@ const projects = [
     description:
       "Building a molecule binding affinity predictor using SOTA deep learning models",
     type: "Design team",
-    date: "2024.08",
+    date: "2025.01",
   },
   {
     image: "/images/projects/wealthyplanet.png",
@@ -102,7 +102,7 @@ const projects = [
     description:
       "Winter 2024 and Fall 2024 internship building an AI-financial advisor for Canadians",
     type: "Internship",
-    date: "2024.07",
+    date: "2024.01",
   },
   {
     image: "/images/projects/brightbearsinfo.png",
@@ -111,6 +111,6 @@ const projects = [
     description:
       "Landing site for non-profit helping secondary education students network with industry professionals",
     type: "Volunteer",
-    date: "2024.06",
+    date: "2022.08",
   },
 ];
