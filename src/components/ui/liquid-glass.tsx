@@ -18,9 +18,9 @@ export default function LiquidGlass({
     >
       <Vaso
         radius={20}
-        depth={2}
+        depth={1}
         blur={0}
-        dispersion={2}
+        dispersion={1}
         className="absolute inset-0 w-full h-full"
       />
       <div className="absolute inset-0 m-4">{children}</div>

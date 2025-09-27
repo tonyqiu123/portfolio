@@ -26,17 +26,17 @@ export default function Home() {
           Back
         </Link>
         <div className="text-center">
-          <h1>Bright Bears Info</h1>
+          <h1>StackAdapt</h1>
           <h2 className="text-zinc-400 font-light max-w-2xl mx-auto text-base sm:text-lg mt-4">
-            Building a comprehensive information platform for bear enthusiasts
+            Building programmatic advertising solutions with machine learning optimization
           </h2>
         </div>
         <div className="w-full max-w-4xl mx-auto relative rounded-3xl overflow-hidden hero-image-shadow h-[300px] sm:h-[400px] lg:h-[500px]">
           <Image
-            src="/images/projects/brightbearsinfo.png"
+            src="/images/projects/stackadapt.png"
             width={1000}
             height={1000}
-            alt="Bright Bears Info"
+            alt="StackAdapt"
             className="object-cover w-full h-full"
           />
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2 h-full">
                   <p>Overview</p>
                   <p className="text-zinc-400">
-                    Building a comprehensive information platform for bear enthusiasts
+                    Building programmatic advertising solutions with machine learning optimization
                   </p>
                 </div>
                 <div className="w-px h-10 my-auto bg-zinc-700" />
@@ -56,7 +56,7 @@ export default function Home() {
                   <p>Website</p>
                   <div className="flex gap-2">
                     <Link
-                      href="https://brightbearsinfo.com"
+                      href="https://stackadapt.com"
                       target="_blank"
                       rel="noreferrer"
                       className="opacity-60 hover:opacity-100 transition-opacity"
@@ -74,18 +74,18 @@ export default function Home() {
                 <div className="flex flex-col gap-2 h-full">
                   <p>Tools</p>
                   <p className="text-zinc-400">
-                    React.js, TypeScript, Express.js, PostgreSQL, AWS, Terraform
+                    Python, TensorFlow, Apache Kafka, Redis, PostgreSQL, AWS, Kubernetes
                   </p>
                 </div>
                 <div className="w-px h-10 my-auto bg-zinc-700" />
                 <div className="flex flex-col gap-2 h-full">
                   <p>Timeframe</p>
-                  <p className="text-zinc-400">2024.4.01 — present</p>
+                  <p className="text-zinc-400">2024.10 — present</p>
                 </div>
                 <div className="w-px h-10 my-auto bg-zinc-700" />
                 <div className="flex flex-col gap-2 h-full">
                   <p>Team</p>
-                  <p className="text-zinc-400">Solo</p>
+                  <p className="text-zinc-400">Engineering Team</p>
                 </div>
               </div>
             </LiquidGlass>
@@ -94,12 +94,12 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <h3>Excerpt</h3>
             <p className="text-zinc-400">
-              I was <b>passionate</b> about helping students connect with industry professionals and{" "}
-              <Link className="underline" href="https://www.google.com">mentorship opportunities</Link>.
-              Noticed that many <code>bright students</code> lacked access to career guidance and networking
-              opportunities. Decided to build a comprehensive platform that connects students with
-              industry mentors, provides career resources, and facilitates meaningful professional
-              relationships that can shape their future careers.
+              I was <b>excited</b> to work on cutting-edge programmatic advertising technology that{" "}
+              <Link className="underline" href="https://www.google.com">optimizes ad placements</Link> using
+              advanced <code>machine learning algorithms</code>. Traditional advertising platforms rely on
+              basic targeting and manual optimization. Decided to build intelligent systems that
+              automatically optimize ad performance, predict user behavior, and maximize ROI for
+              advertisers through real-time bidding and predictive analytics.
             </p>
           </div>
 
@@ -108,88 +108,99 @@ export default function Home() {
             <LiquidGlass height={100}>
               <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-8">
                 <div className="flex flex-col gap-2">
-                  <h4>Mentor-Student Matching System</h4>
+                  <h4>Real-time Bidding Engine</h4>
                   <p className="text-zinc-400">
-                    Intelligent matching algorithm that pairs students with industry professionals
-                    based on career interests, skills, and availability. The system considers
-                    both mentor expertise and student goals to create meaningful connections.
+                    High-performance bidding system that processes millions of ad requests per second
+                    with sub-millisecond response times. Uses machine learning to predict bid success
+                    and optimize for campaign objectives.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h4>Career Resource Library</h4>
+                  <h4>Predictive Analytics Platform</h4>
                   <p className="text-zinc-400">
-                    Comprehensive collection of career development resources including resume
-                    templates, interview guides, industry insights, and skill-building materials
-                    curated by experienced professionals.
+                    Advanced ML models that predict user behavior, ad performance, and market trends.
+                    Features include audience segmentation, conversion prediction, and automated
+                    budget optimization for maximum campaign efficiency.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h4>Networking Event Platform</h4>
+                  <h4>Dynamic Creative Optimization</h4>
                   <p className="text-zinc-400">
-                    Virtual and in-person networking events that bring together students and
-                    professionals. Features include event scheduling, RSVP management, and
-                    post-event follow-up tools to maintain connections.
+                    AI-powered system that automatically generates and tests ad creatives based on
+                    audience preferences and performance data. Continuously optimizes creative
+                    elements to maximize engagement and conversion rates.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h4>Cross-Device Attribution</h4>
+                  <p className="text-zinc-400">
+                    Sophisticated attribution modeling that tracks user journeys across devices and
+                    touchpoints. Provides accurate ROI measurement and helps advertisers understand
+                    the complete customer journey.
                   </p>
                 </div>
               </div>
             </LiquidGlass>
           </div>
+
           <div className="flex flex-col gap-4">
-            <h3>Building a scalable mentorship platform</h3>
+            <h3>Building scalable real-time data processing infrastructure</h3>
             <p className="text-zinc-400">
-              Developed a robust platform architecture that can handle thousands of concurrent users
-              and mentorship connections. Implemented real-time messaging, video call integration,
-              and comprehensive user profiles to facilitate meaningful mentor-student relationships.
+              Developed a robust data pipeline using Apache Kafka and Redis to handle millions of
+              ad requests per second. Implemented distributed processing with Kubernetes orchestration
+              to ensure high availability and fault tolerance. Built comprehensive monitoring and
+              alerting systems to maintain system health and performance.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3>Implementing intelligent matching algorithms</h3>
+            <h3>Implementing advanced machine learning models for ad optimization</h3>
             <p className="text-zinc-400">
-              Created sophisticated matching algorithms that consider multiple factors including
-              career interests, skill levels, availability, and communication preferences.
-              The system uses machine learning to improve match quality over time based on
-              successful mentorship outcomes and user feedback.
+              Created sophisticated ML models using TensorFlow that predict ad performance and
+              optimize bidding strategies. Implemented deep learning algorithms for audience
+              targeting, fraud detection, and creative optimization. The models continuously
+              learn from campaign data to improve prediction accuracy and ROI.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <h3>
-              Creating comprehensive career development resources
+              Creating comprehensive analytics and reporting dashboard
             </h3>
             <p className="text-zinc-400">
-              Built an extensive library of career development resources including industry-specific
-              guides, interview preparation materials, and skill assessment tools. Collaborated
-              with industry professionals to create authentic, up-to-date content that helps
-              students navigate their career journeys effectively.
+              Built an intuitive analytics platform that provides real-time insights into campaign
+              performance, audience behavior, and market trends. Features include interactive
+              visualizations, automated reporting, and predictive analytics to help advertisers
+              make data-driven decisions and optimize their advertising strategies.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3>Optimizing user engagement and retention</h3>
+            <h3>Optimizing for privacy and compliance</h3>
             <p className="text-zinc-400">
-              Implemented gamification elements and progress tracking to increase user engagement.
-              Added achievement systems, milestone celebrations, and regular check-ins to maintain
-              active participation in mentorship programs and career development activities.
+              Implemented privacy-first advertising solutions that comply with GDPR, CCPA, and
+              other privacy regulations. Built consent management systems, data anonymization
+              pipelines, and privacy-preserving analytics to ensure user privacy while maintaining
+              advertising effectiveness.
             </p>
           </div>
           <div className="flex flex-col gap-4">
             <h3>
-              Building analytics dashboard for mentorship insights
+              Building automated campaign management and optimization
             </h3>
             <p className="text-zinc-400">
-              Developed comprehensive analytics tools that track mentorship success rates, user
-              engagement metrics, and career outcome improvements. The dashboard provides
-              insights for both administrators and users to optimize the mentorship experience
-              and measure program effectiveness.
+              Created intelligent automation systems that manage campaigns end-to-end, from
+              setup to optimization. Features include automated bid adjustments, budget
+              reallocation, and performance monitoring. The system continuously optimizes
+              campaigns to achieve advertiser goals with minimal manual intervention.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <h3>Code Implementation</h3>
             <p className="text-zinc-400 mb-4">
-              Here&apos;s a sample of the MentorMatchingService that handles intelligent
-              mentor-student pairing based on compatibility algorithms:
+              Here&apos;s a sample of the BiddingEngine class that handles
+              real-time ad bidding and optimization:
             </p>
           </div>
         </section>

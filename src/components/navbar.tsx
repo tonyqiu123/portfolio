@@ -4,7 +4,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="max-w-screen-xl w-full flex justify-between">
+    <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="w-full flex justify-between">
       <div className="flex flex-col gap-3">
         <div className="flex gap-6 items-center">
           <h2>tony qiu</h2>
@@ -59,7 +60,8 @@ function Navbar() {
           Contact
         </Link>
       </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 

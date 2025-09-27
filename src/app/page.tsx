@@ -21,14 +21,15 @@ const itemVariants = {
 
 export default function Home() {
   return (
-    <div className="p-10 flex flex-col gap-10">
+    <div className="w-full flex flex-col gap-6 lg:gap-10 py-6 lg:py-10">
       <Navbar />
-      <motion.div
-        className="max-w-screen-xl w-full grid grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] gap-10"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
+      <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          className="w-full grid grid-cols-[repeat(auto-fit,_minmax(500px,_1fr))] gap-4 lg:gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
         {projects.map((project) => (
           <motion.div key={project.title} variants={itemVariants}>
             <Project
@@ -37,10 +38,12 @@ export default function Home() {
               title={project.title}
               description={project.description}
               type={project.type}
+              date={project.date}
             />
           </motion.div>
         ))}
-      </motion.div>
+        </motion.div>
+      </div>
       <Footer />
     </div>
   );
@@ -48,51 +51,66 @@ export default function Home() {
 
 const projects = [
   {
-    image: "/images/projects/project6.png",
-    url: "/affi-nn-ity",
-    title: "Affi-NN-ity",
+    image: "/images/projects/sobaii.png",
+    url: "/sobaii",
+    title: "Agentic Excel in Browser",
     description:
-      "Building a molecule binding affinity predictor using SOTA deep learning models",
-    type: "Design team",
+      "Building an AI-powered spreadsheet application with intelligent automation and natural language processing",
+    type: "Project",
+    date: "2024.12",
   },
   {
-    image: "/images/projects/project3.png",
+    image: "/images/projects/wat2do.png",
+    url: "https://wat2do.vercel.app",
+    title: "Centralized Platform for Discovering Club Events at UW",
+    description:
+      "Building a comprehensive platform for students to discover and join club events across campus",
+    type: "Project",
+    date: "2024.11",
+  },
+  {
+    image: "/images/projects/stackadapt.png",
+    url: "https://www.stackadapt.com",
+    title: "StackAdapt",
+    description:
+      "Building programmatic advertising solutions with machine learning optimization",
+    type: "Internship",
+    date: "2024.10",
+  },
+  {
+    image: "/images/projects/humane-society.png",
     url: "/uwblueprint",
     title: "UW Blueprint",
     description:
       "Building a tablet-first web app for a non-profit animal shelter to vet and connect volunteers to animals",
     type: "Design team",
+    date: "2024.09",
   },
   {
-    image: "/images/projects/project1.png",
-    url: "/sobaii",
-    title: "sobaii",
+    image: "/images/projects/affi-nn-ity.png",
+    url: "/affi-nn-ity",
+    title: "Affi-NN-ity",
     description:
-      "Finetuning SOTA OCR inside a unique birdseye view bookkeeping experience",
-    type: "Project",
+      "Building a molecule binding affinity predictor using SOTA deep learning models",
+    type: "Design team",
+    date: "2024.08",
   },
   {
-    image: "/images/projects/project2.png",
-    url: "/wealthyplanet",
+    image: "/images/projects/wealthyplanet.png",
+    url: "https://www.wealthyplanet.com",
     title: "WealthyPlanet",
     description:
       "Winter 2024 and Fall 2024 internship building an AI-financial advisor for Canadians",
     type: "Internship",
+    date: "2024.07",
   },
   {
-    image: "/images/projects/project4.png",
-    url: "/50-days-of-components",
-    title: "50 Days of Components",
-    description:
-      "Designing and building 50 Next.js + vanilla CSS components in 50 days",
-    type: "Project",
-  },
-  {
-    image: "/images/projects/project5.png",
-    url: "/brightbearsinfo",
+    image: "/images/projects/brightbearsinfo.png",
+    url: "https://www.brightbearsinfo.com",
     title: "BrightBearsInfo",
     description:
       "Landing site for non-profit helping secondary education students network with industry professionals",
     type: "Volunteer",
+    date: "2024.06",
   },
 ];
